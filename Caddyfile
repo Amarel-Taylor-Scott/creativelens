@@ -1,0 +1,34 @@
+creativelens.polsia.app {
+	# API routes
+	handle /api/* {
+		reverse_proxy backend:4000
+	}
+
+	# Health check
+	handle /health {
+		reverse_proxy backend:4000
+	}
+
+	# Frontend
+	handle {
+		reverse_proxy frontend:3000
+	}
+
+	# Security headers
+	header {
+		X-Content-Type-Options nosniff
+		X-Frame-Options DENY
+		X-XSS-Protection "1; mode=block"
+		Referrer-Policy strict-origin-when-cross-origin
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+	}
+
+	# Compression
+	encode gzip zstd
+
+	# Logging
+	log {
+		output file /var/log/caddy/creativelens.log
+		format json
+	}
+}
