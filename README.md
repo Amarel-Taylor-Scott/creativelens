@@ -1,8 +1,15 @@
 # CreativeLens
 
+[![CI](https://github.com/Amarel-Taylor-Scott/creativelens/actions/workflows/ci.yml/badge.svg)](https://github.com/Amarel-Taylor-Scott/creativelens/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Node 22+](https://img.shields.io/badge/node-22+-green.svg)](https://nodejs.org/)
+
 Creative-intelligence platform for marketing teams: generate, score, and
 organize AI image content by niche — prompt studio, gallery, remixes, and team
 boards.
+
+> CI builds the backend (`tsc`) and frontend (SvelteKit/Vite). Runtime paths
+> (migrations, seeds, image scoring) require Postgres and are not run in CI.
 
 ## Features
 
