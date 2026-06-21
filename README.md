@@ -49,6 +49,14 @@ npm run seed                  # seed categories/niches
 npm test   # backend + frontend test suites
 ```
 
+## Contributing
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for setup
+(backend and frontend are independent npm projects), the build/test bar, and the
+PR process, and note our [Code of Conduct](CODE_OF_CONDUCT.md). Report security
+issues privately per [SECURITY.md](SECURITY.md). Release history is in
+[CHANGELOG.md](CHANGELOG.md).
+
 ## License
 
-MIT — see [LICENSE](LICENSE).
+[MIT](LICENSE) © Amarel Taylor Scott
